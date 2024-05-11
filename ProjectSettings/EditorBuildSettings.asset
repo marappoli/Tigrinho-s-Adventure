@@ -8,4 +8,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escolha/Escolha1/Escolha1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Escolha/Escolha1/Escolha1Voltando.unity
+    guid: cc009eb347e59d14eb02ef09aa038554
+  - enabled: 1
+    path: Assets/Scenes/Level1/Level1Dialogo.unity
+    guid: 2988c0a3948a0664e926e2da6d0820ab
+  - enabled: 1
+    path: Assets/Scenes/Level1/Level1Luta.unity
+    guid: 566a9c05c873f614eb281ef50c26de6c
+  - enabled: 1
+    path: Assets/Scenes/Escolha/Escolha2/Escolha2.unity
+    guid: 6ff43f4887a0b034eae934cdc3d37600
+  - enabled: 1
+    path: Assets/Scenes/Escolha/Escolha2/Escolha2Voltando.unity
+    guid: 02f8f2818b2002b418ad3d3be3c80ed1
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level2Dialogo.unity
+    guid: 8d3830c9edd4c5043b3ee9466a85579f
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level2Luta.unity
+    guid: 6d23fbf13ae502c4cabe86a75792f0db
+  - enabled: 1
+    path: Assets/Scenes/Escolha/Escolha3/Escolha3.unity
+    guid: e65902275782a1d458cb1816bc831292
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level3Dialogo.unity
+    guid: 37e2d61b0ac4e0e46b850df0d353e9dc
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level3Luta.unity
+    guid: e802be15d0c52404e901a4cc1b96dc46
   m_configObjects: {}
