@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8af864632ccd204fae9561bab14f059, type: 3}
+  m_Name: Dialogo2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Tigrinho: E a\xED, Rico, quanto tempo! Ouvi dizer que voc\xEA t\xE1 por dentro
+    de todas as paradas quentes da cidade."
+  - "Rico: E a\xED, Tigrinho! Pois \xE9, t\xF4 sempre antenado nos bastidores, sabendo
+    de tudo que rola. Mas e voc\xEA, o que te traz por aqui?"
+  - "Tigrinho: T\xF4 precisando de algu\xE9m que manje dos paranau\xEAs da tecnologia,
+    algu\xE9m que possa me ajudar a dar uns golpes certeiros, sacou?"
+  - "Rico: Hum, t\xF4 ligado. Mas n\xE3o \xE9 qualquer informa\xE7\xE3o que eu solto
+    por a\xED, brother. O que voc\xEA tem pra me oferecer em troca?"
+  - "Tigrinho: Te darei toda tecnologia que precisar para seus experimentos. Voc\xEA
+    sabe que meu jogo lucra bem."
+  - "Rico: Hmm, parece interessante. Mas lembre-se, mano, informa\xE7\xF5es valem
+    ouro no mundo do crime."
+  responses:
+  - responseText: "A) Informa\xE7\xF5es n\xE3o s\xE3o mais valiosas que o meu jogo"
+    dialogueObject: {fileID: 11400000, guid: 5b32c0fe4ed1f6c4195868ad1c5f786f, type: 2}
+    isCorrect: 0
+  - responseText: "B) Informa\xE7\xF5es n\xE3o pagam minhas contas"
+    dialogueObject: {fileID: 11400000, guid: 5b32c0fe4ed1f6c4195868ad1c5f786f, type: 2}
+    isCorrect: 0
+  - responseText: C) Eu sei valorizar um bom informante
+    dialogueObject: {fileID: 11400000, guid: b4f58c06fb78e60469cf8edf6879e38f, type: 2}
+    isCorrect: 1

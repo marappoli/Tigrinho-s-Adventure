@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8af864632ccd204fae9561bab14f059, type: 3}
-  m_Name: Erro
+  m_Name: Acerto3
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Resposta Errada
-
-'
+  - "Tina: Depois dessa proposta, fica imposs\xEDvel recusar"
+  - "Tigrinho: Voc\xEA \xE9 fod@! "
+  - 'Tigrinho: Agora me diga, como funciona essa parada?'
+  - "Tina: Quando voc\xEA ver que est\xE1 perdendo muita vida, escolha a op\xE7\xE3o
+    \"Curar\". Ela ir\xE1 restaurar parte de sua vida."
+  - 'Tigrinho: Show! Vamo nessa'
   responses: []

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Escolha/Escolha1/Escolha1Voltando.unity
     guid: cc009eb347e59d14eb02ef09aa038554
   - enabled: 1
+    path: Assets/Scenes/Escolha/Escolha1/RetornoEscolha1.unity
+    guid: 974022882ab6bc3449fc82eefed553dc
+  - enabled: 1
     path: Assets/Scenes/Level1/Level1Dialogo.unity
     guid: 2988c0a3948a0664e926e2da6d0820ab
   - enabled: 1
@@ -23,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escolha/Escolha2/Escolha2Voltando.unity
     guid: 02f8f2818b2002b418ad3d3be3c80ed1
+  - enabled: 1
+    path: Assets/Scenes/Escolha/Escolha2/RetornoEscolha2.unity
+    guid: 6a4e40108ecb3914a8bee6735abbd81a
   - enabled: 1
     path: Assets/Scenes/Level2/Level2Dialogo.unity
     guid: 8d3830c9edd4c5043b3ee9466a85579f
@@ -38,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/Level3Luta.unity
     guid: e802be15d0c52404e901a4cc1b96dc46
+  - enabled: 1
+    path: Assets/Scenes/Escolha/Escolha3/RetornoEscolha3.unity
+    guid: 9e611354e4dfa0e43925b390259f8e73
   m_configObjects: {}

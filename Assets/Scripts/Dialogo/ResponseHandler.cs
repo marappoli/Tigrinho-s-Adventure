@@ -1,45 +1,36 @@
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ResponseHandler : MonoBehaviour
 {
     [SerializeField] private RectTransform responseBox;
     [SerializeField] private RectTransform responseButtonTemplate;
     [SerializeField] private RectTransform responseContainer;
+    [SerializeField] private DialogueObject acertoDialogueObject;
+    [SerializeField] private DialogueObject erroDialogueObject;
+    [SerializeField] private string cenaCorreta;
+    [SerializeField] private string cenaIncorreta;
+
 
     private DialogueUI dialogueUI;
-    //private ResponseEvent[] responseEvents;
-
-    //private List<GameObject> tempResponseButtons = new List<GameObject>();
 
     private void Start()
     {
         dialogueUI = GetComponent<DialogueUI>();
     }
 
-    /*public void AddResponseEvents(ResponseEvent[] responseEvents)
-    {
-        this.responseEvents = responseEvents;
-    }*/
-
     public void ShowResponses(Response[] responses)
     {
         float responseBoxHeight = 0;
-        foreach(Response response in responses)
-        //for (int i = 0; i < responses.Length; i++)
+        foreach (Response response in responses)
         {
-            //Response response = responses[i];
-            //int responseIndex = i;
-
             GameObject responseButton = Instantiate(responseButtonTemplate.gameObject, responseContainer);
             responseButton.gameObject.SetActive(true);
             responseButton.GetComponent<TMP_Text>().text = response.ResponseText;
-            responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response/*, responseIndex*/));
-
-            //tempResponseButtons.Add(responseButton);
-
+            responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response));
             responseBoxHeight += responseButtonTemplate.sizeDelta.y;
         }
 
@@ -47,30 +38,47 @@ public class ResponseHandler : MonoBehaviour
         responseBox.gameObject.SetActive(true);
     }
 
-    private void OnPickedResponse(Response response/*, int responseIndex*/)
+    private void OnPickedResponse(Response response)
     {
         responseBox.gameObject.SetActive(false);
 
-        /*foreach (GameObject button in tempResponseButtons)
-        {
-            Destroy(button);
-        }
-        tempResponseButtons.Clear();
-
-        if (responseEvents != null && responseIndex <= responseEvents.Length)
-        {
-            responseEvents[responseIndex].OnPickedResponse?.Invoke();
-        }
-
-        responseEvents = null;*/
-
         if (response.DialogueObject)
         {
-            dialogueUI.ShowDialogue(response.DialogueObject);
+            StartCoroutine(ShowDialogueAndWait(response.DialogueObject));
+        }
+
+        StartCoroutine(LoadSceneAfterDialogue(response.IsCorrect));
+    }
+
+    private IEnumerator ShowDialogueAndWait(DialogueObject dialogueObject)
+    {
+        dialogueUI.ShowDialogue(dialogueObject);
+        yield return new WaitUntil(() => !dialogueUI.IsOpen);
+    }
+
+    private IEnumerator LoadSceneAfterDialogue(bool isCorrect)
+    {
+        yield return new WaitUntil(() => !dialogueUI.IsOpen);
+
+        if (isCorrect)
+        {
+            LoadCorrectScene();
         }
         else
         {
-            dialogueUI.CloseDialogueBox();
+            LoadIncorrectScene();
         }
+    }
+
+    private void LoadCorrectScene()
+    {
+        dialogueUI.ShowDialogue(acertoDialogueObject);
+        SceneManager.LoadScene(cenaCorreta);
+    }
+
+    private void LoadIncorrectScene()
+    {
+        dialogueUI.ShowDialogue(erroDialogueObject);
+        SceneManager.LoadScene(cenaIncorreta);
     }
 }

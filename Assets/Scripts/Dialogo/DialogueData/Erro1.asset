@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8af864632ccd204fae9561bab14f059, type: 3}
-  m_Name: Acerto
+  m_Name: Erro1
   m_EditorClassIdentifier: 
   dialogue:
-  - Resposta certa
+  - "Benny: P\xF4, foi mal, n\xE3o posso aceitar\n"
   responses: []
