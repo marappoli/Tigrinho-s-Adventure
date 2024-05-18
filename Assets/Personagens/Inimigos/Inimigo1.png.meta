@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Inimigo1_0
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 965
+        width: 160
+        height: 197
+      alignment: 9
+      pivot: {x: 0.38175678, y: 0.48628104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc9f9651d596a44fba4ddccedb55d6d
+      internalID: 209024190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo1_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 959
+        width: 170
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3251192, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad6494a870383045b7e3fd6ddad3849
+      internalID: -1929775023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo1_2
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 943
+        width: 184
+        height: 222
+      alignment: 9
+      pivot: {x: 0.30904853, y: 0.48782596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf49abb62f8f6be4ca8e65d87c7b7f1e
+      internalID: -1598781499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo1_3
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 947
+        width: 179
+        height: 213
+      alignment: 9
+      pivot: {x: 0.25841773, y: 0.46193412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f97d92aed1b441498620b5d84c7c3ec
+      internalID: -373008386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo1_4
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 965
+        width: 191
+        height: 190
+      alignment: 9
+      pivot: {x: 0.21699436, y: 0.45732614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca41269505702cb44a4899c47158b761
+      internalID: 1964028783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo1_5
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 985
+        width: 202
+        height: 159
+      alignment: 9
+      pivot: {x: 0.13874802, y: 0.3810137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb31ba2ed44e9e47b742019e3c0fc19
+      internalID: 840351122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +232,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Inimigo1_0: 209024190
+      Inimigo1_1: -1929775023
+      Inimigo1_2: -1598781499
+      Inimigo1_3: -373008386
+      Inimigo1_4: 1964028783
+      Inimigo1_5: 840351122
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

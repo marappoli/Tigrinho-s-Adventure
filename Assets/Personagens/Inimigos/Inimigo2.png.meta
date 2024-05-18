@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Inimigo2_0
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 108
+        width: 168
+        height: 164
+      alignment: 9
+      pivot: {x: 0.35037342, y: 0.45529425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82824d106fc2fa64cbe7d86d87a862af
+      internalID: 1716000490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo2_1
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 110
+        width: 196
+        height: 162
+      alignment: 9
+      pivot: {x: 0.22212219, y: 0.46767312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8137a3fbca55b4d879affa25b7fd94
+      internalID: 1132351698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo2_2
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 112
+        width: 223
+        height: 158
+      alignment: 9
+      pivot: {x: 0.16652717, y: 0.46685472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5435dd5e0e8427a47b2ba154dff84309
+      internalID: 701147247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo2_3
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 110
+        width: 241
+        height: 160
+      alignment: 9
+      pivot: {x: 0.16101201, y: 0.48690748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e050f53f02bd547abb2e234bc0f331
+      internalID: 394037357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo2_4
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 109
+        width: 249
+        height: 161
+      alignment: 9
+      pivot: {x: 0.13825223, y: 0.4869889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843740d4b3e936f49971aa0a29c810e1
+      internalID: 358025732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo2_5
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 106
+        width: 217
+        height: 166
+      alignment: 9
+      pivot: {x: 0.17178668, y: 0.46214238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c98ddd04a325d408ea1714d81b1bed
+      internalID: -1981894409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inimigo2_6
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 110
+        width: 166
+        height: 163
+      alignment: 9
+      pivot: {x: 0.22237976, y: 0.42931727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716604abde29efe49b1a11362add3cf8
+      internalID: 726123241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +253,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Inimigo2_0: 1716000490
+      Inimigo2_1: 1132351698
+      Inimigo2_2: 701147247
+      Inimigo2_3: 394037357
+      Inimigo2_4: 358025732
+      Inimigo2_5: -1981894409
+      Inimigo2_6: 726123241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

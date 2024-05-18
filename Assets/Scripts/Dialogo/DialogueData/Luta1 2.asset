@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8af864632ccd204fae9561bab14f059, type: 3}
+  m_Name: Luta1 2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Tigrinho: Santos, voc\xEA n\xE3o cansa de tentar, n\xE9? J\xE1 te disse que
+    voc\xEA n\xE3o vai conseguir me derrubar."
+  - "Policial Santos: Tigrinho, um dia a casa cai. E hoje \xE9 o seu dia de azar.
+    Vou acabar com essa sua farra."
+  - "Tigrinho: Voc\xEA fala demais, Santos. Vamos ver se voc\xEA \xE9 t\xE3o bom
+    de porrada quanto \xE9 de papo."
+  responses:
+  - responseText: "Come\xE7ar batalha!"
+    dialogueObject: {fileID: 0}
+    isCorrect: 0
