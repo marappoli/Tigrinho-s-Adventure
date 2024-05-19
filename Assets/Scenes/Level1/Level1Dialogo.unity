@@ -1285,7 +1285,7 @@ MonoBehaviour:
   responseButtonTemplate: {fileID: 938478073}
   responseContainer: {fileID: 651766404}
   acertoDialogueObject: {fileID: 11400000, guid: 59f44f7188de8fc45b6cd21499438d0b, type: 2}
-  erroDialogueObject: {fileID: 11400000, guid: eadaab3f5e6af274da0b49a1fb3afcad, type: 2}
+  erroDialogueObject: {fileID: 11400000, guid: b4f58c06fb78e60469cf8edf6879e38f, type: 2}
   cenaCorreta: Level1Luta
   cenaIncorreta: RetornoEscolha1
 --- !u!1 &1860918615

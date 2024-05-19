@@ -22,4 +22,4 @@ MonoBehaviour:
   responses:
   - responseText: "Come\xE7ar batalha!"
     dialogueObject: {fileID: 0}
-    isCorrect: 0
+    isCorrect: 1

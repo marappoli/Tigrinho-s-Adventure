@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8af864632ccd204fae9561bab14f059, type: 3}
-  m_Name: Luta1 2
+  m_Name: Luta2
   m_EditorClassIdentifier: 
   dialogue:
   - "Tigrinho: Santos, voc\xEA n\xE3o cansa de tentar, n\xE9? J\xE1 te disse que
@@ -22,4 +22,4 @@ MonoBehaviour:
   responses:
   - responseText: "Come\xE7ar batalha!"
     dialogueObject: {fileID: 0}
-    isCorrect: 0
+    isCorrect: 1

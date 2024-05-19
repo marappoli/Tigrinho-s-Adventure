@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ResponseHandler : MonoBehaviour
+public class ResponseHandlerLuta : MonoBehaviour
 {
     [SerializeField] private RectTransform responseBox;
     [SerializeField] private RectTransform responseButtonTemplate;
@@ -15,11 +15,11 @@ public class ResponseHandler : MonoBehaviour
     [SerializeField] private string cenaIncorreta;
 
 
-    private DialogueUI dialogueUI;
+    private DialogueUILuta dialogueUI;
 
     private void Start()
     {
-        dialogueUI = GetComponent<DialogueUI>();
+        dialogueUI = GetComponent<DialogueUILuta>();
     }
 
     public void ShowResponses(Response[] responses)
@@ -39,42 +39,56 @@ public class ResponseHandler : MonoBehaviour
     }
 
     private void OnPickedResponse(Response response)
+{
+    responseBox.gameObject.SetActive(false);
+    
+    Debug.Log("Picked response: " + response.ResponseText);
+    Debug.Log("Dialogue Object: " + response.DialogueObject);
+
+    if (response.DialogueObject)
     {
-        responseBox.gameObject.SetActive(false);
-
-        if (response.DialogueObject)
-        {
-            StartCoroutine(ShowDialogueAndWait(response.DialogueObject));
-        }
-
-        StartCoroutine(LoadSceneAfterDialogue(response.IsCorrect));
+        dialogueUI.ShowDialogue(response.DialogueObject);
     }
 
-    private IEnumerator ShowDialogueAndWait(DialogueObject dialogueObject)
+    StartCoroutine(LoadSceneAfterDialogue(response.IsCorrect));
+}
+
+private IEnumerator LoadSceneAfterDialogue(bool isCorrect)
+{
+    // Aguarda um pequeno intervalo antes de verificar novamente se o diálogo está aberto
+    yield return new WaitForSeconds(0.1f);
+
+    Debug.Log("Dialogue finished. Is correct: " + isCorrect);
+
+    if (isCorrect)
     {
-        dialogueUI.ShowDialogue(dialogueObject);
-        yield return new WaitUntil(() => !dialogueUI.IsOpen);
+        LoadCorrectScene();
     }
-
-    private IEnumerator LoadSceneAfterDialogue(bool isCorrect)
+    else
     {
-        yield return new WaitUntil(() => !dialogueUI.IsOpen);
-
-        if (isCorrect)
-        {
-            LoadCorrectScene();
-        }
-        else
-        {
-            LoadIncorrectScene();
-        }
+        LoadIncorrectScene();
     }
+}
 
-    private void LoadCorrectScene()
+
+private void LoadCorrectScene()
+{
+    Debug.Log("Loading correct scene...");
+
+    if (acertoDialogueObject == null)
     {
+        Debug.Log("No correct dialogue. Loading scene directly: " + cenaCorreta);
+        SceneManager.LoadScene(cenaCorreta);
+    }
+    else
+    {
+        Debug.Log("Showing correct dialogue first.");
         dialogueUI.ShowDialogue(acertoDialogueObject);
         SceneManager.LoadScene(cenaCorreta);
     }
+}
+
+
 
     private void LoadIncorrectScene()
     {

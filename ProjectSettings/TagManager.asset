@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Wall
   - Porta
+  - Tigrinho
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fundo
+    uniqueID: 2036711193
+    locked: 0
+  - name: Tigrinho
+    uniqueID: 2064107685
+    locked: 0
+  - name: Dialogo
+    uniqueID: 833275837
     locked: 0
