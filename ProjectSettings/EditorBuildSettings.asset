@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu/Menu.unity
+    guid: 2a72c418033668a47bb4e27b3dab5378
+  - enabled: 1
     path: Assets/Scenes/Escolha/Escolha1/Escolha1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Escolha/Escolha1/Escolha1Voltando.unity
     guid: cc009eb347e59d14eb02ef09aa038554
   - enabled: 1
@@ -29,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escolha/Escolha2/Escolha2.unity
     guid: 6ff43f4887a0b034eae934cdc3d37600
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Escolha/Escolha2/Escolha2Voltando.unity
     guid: 02f8f2818b2002b418ad3d3be3c80ed1
   - enabled: 1
