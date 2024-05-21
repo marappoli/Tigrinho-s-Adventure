@@ -7,9 +7,9 @@ using TMPro; // Adicione esta linha
 public class BattleSystem2 : MonoBehaviour
 {
     public float playerHealth = 100f;
-    public float enemyHealth = 80f; // Aumentando a vida do inimigo
+    public float enemyHealth = 100f; // Aumentando a vida do inimigo
     public float playerDefense = 0f; // A defesa inicial do jogador é 0
-    public float enemyAttackDamage = 15f; // Aumentando o dano do ataque do inimigo
+    public float enemyAttackDamage = 20f; // Aumentando o dano do ataque do inimigo
 
     public HPBar playerHPBar;
     public EnemyHPBar enemyHPBar;
